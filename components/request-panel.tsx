@@ -137,7 +137,7 @@ export default function RequestPanel() {
               {request.headers.map((header, index) => (
                 <>
                   <div key={`switch-${index}`} className="flex items-center">
-                    <Switch checked={header.enabled} onCheckedChange={() => toggleHeader(index)} size="sm" />
+                    <Switch checked={header.enabled} onCheckedChange={() => toggleHeader(index)} />
                   </div>
                   <Input
                     key={`key-${index}`}
